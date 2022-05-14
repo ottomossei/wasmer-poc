@@ -1,0 +1,12 @@
+*
+!*/
+!*.*
+!Dockerfile
+!Makefile
+*.exe
+**/build/
+*.out
+*.o
+dryrun.log
+targets.log
+configurationCache.log
