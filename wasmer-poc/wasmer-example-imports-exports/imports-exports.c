@@ -43,6 +43,7 @@ int main(int argc, const char* argv[]) {
 
     wasm_byte_vec_delete(&wasm_bytes);
 
+    // Declaring imports
     printf("Creating the imported function...\n");
     wasm_functype_t* host_func_type = wasm_functype_new_0_1(wasm_valtype_new_i32());
     wasm_func_t* host_func = wasm_func_new(store, host_func_type, host_func_callback);
@@ -82,6 +83,7 @@ int main(int argc, const char* argv[]) {
         return 1;
     }
 
+    // Fetching exports
     printf("Retrieving the exported function...\n");
     wasm_func_t* func = wasm_extern_as_func(exports.data[0]);
 
