@@ -1,4 +1,4 @@
-# Instantiating a Wasm module
+# Imports & exports
 ```bash
 make
 ./imports-exports
