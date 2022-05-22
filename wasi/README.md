@@ -1,12 +1,10 @@
 # wasmer-runtime
 ## Refer
-https://docs.wasmer.io/ecosystem/wasmer
-
-## Feature
-https://docs.wasmer.io/ecosystem/wasmer/wasmer-features
+https://docs.wasmer.io/ecosystem/wasienv
 
 ## Command
-check wasm config
 ```bash
-wasmer config --pkg-config
+wasicc example.c -o example.wasm
+wasmer example.wasm
+// Hello, WASI!
 ```
