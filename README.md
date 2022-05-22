@@ -4,7 +4,7 @@
      - Investigation of wasmer (WebAssembly runtime)
  - Key Results
      - [x] Confirmation of wasmer startup on linux
-     - [ ] Establish how to install Wasmer Runtime
+     - [x] Establish how to compile C to wasm
      - [x] Interaction with WebAssembly modules in C.
 
 ## Setup environment
