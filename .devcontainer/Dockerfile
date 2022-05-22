@@ -18,6 +18,15 @@ ENV PATH ${WASMER_DIR}/bin:${PATH}
 
 RUN echo $PATH
 
+# Prepare Rust 
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+
+# Prepare Python
+RUN apt-get install -y python3-pip
+
+# Prepare Wasienv
+RUN curl https://raw.githubusercontent.com/wasienv/wasienv/master/install.sh | sh
+
 # [Optional] Uncomment this section to install additional packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
